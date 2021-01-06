@@ -16,9 +16,16 @@ body {
   color: #fff;
 }
 
-select {
+input, button, select {
   font-family: "Abel", sans-serif;
-  font-size: large;
+   font-size: 14px;
+   text-align:center;
+}
+
+button {
+  background-color: #c40100;
+  color: white;
+  border-color: white;
 }
 
 .hero h1 {
