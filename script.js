@@ -126,3 +126,60 @@ var conf2Winner = document.getElementById("conf2").value
 document.getElementById("final").options[0].text = conf1Winner;
 document.getElementById("final").options[1].text = conf2Winner;
 }
+
+function grabValues() {
+
+  //First Round
+  var tampaWashWinner = document.getElementById("tampaWash").value;
+  var seaLosWinner = document.getElementById("seaLos").value;
+  var nOChiWinner = document.getElementById("nOChi").value;
+  var baltTenWinner = document.getElementById("baltTen").value;
+  var pittsClevWinner = document.getElementById("pittsClev").value;
+  var buffColtWinner = document.getElementById("buffCrap").value;
+
+  //Second Round
+  var div1Winner = document.getElementById("div").value
+  var div2Winner = document.getElementById("div2").value
+  var div1WinnerEast = document.getElementById("div01").value
+  var div2WinnerEast = document.getElementById("div02").value
+
+  //Conference Round
+  var conf1Winner = document.getElementById("conf1").value
+  var conf2Winner = document.getElementById("conf2").value
+
+  //Finals
+  var final = document.getElementById("final").value
+
+  //Username
+  var username = document.getElementById("username").value
+
+  console.log(`
+  Name = ${username}
+
+  -------------First Round----------------
+  
+  Pittsburgh vs Cleveland = ${pittsClevWinner}
+  Batltimore vs. Tennesee = ${baltTenWinner}
+  Buffalo vs. Indy = ${buffColtWinner}
+
+  Tampa vs Washington = ${tampaWashWinner}
+  Seattle vs Los Angelas = ${seaLosWinner}
+  New Orleans vs. Chicago = ${nOChiWinner}
+
+  
+  -------------Second Round----------------
+  East Winner = ${div1WinnerEast}
+  East Winner 2 = ${div2WinnerEast}
+  West Winner = ${div1Winner}
+  West Winner 2 = ${div2Winner}
+  
+
+  -------------Conf. Round----------------
+  East Winner = ${conf1Winner}
+  West Winner = ${conf2Winner}
+
+
+  -------------Superbowl Winner----------------
+  Superbowl Winner = ${final}
+`);
+}
