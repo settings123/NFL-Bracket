@@ -1,3 +1,7 @@
+window.setInterval(function(){
+  fillOptions();
+}, 1000);
+
 particlesJS(
   "particles-js", {
   "particles": {
@@ -40,9 +44,8 @@ particlesJS(
 TweenMax.globalTimeScale(0.5);
 
 
+// MARK: SHIT CODE
 function fillOptions() {
-
-  //Insert shit code
 
   // East Games
   var baltTenWinner = document.getElementById("baltTen").value
