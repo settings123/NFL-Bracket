@@ -1,3 +1,7 @@
+window.setInterval(function(){
+  fillOptions();
+}, 1000);
+
 particlesJS(
   "particles-js", {
   "particles": {
