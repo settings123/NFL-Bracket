@@ -153,7 +153,7 @@ function grabValues() {
   //Username
   var username = document.getElementById("username").value
 
-  console.log(`
+  alert(`
   Name = ${username}
 
   -------------First Round----------------
