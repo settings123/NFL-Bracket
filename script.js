@@ -1,6 +1,6 @@
 window.setInterval(function(){
   fillOptions();
-}, 1000);
+}, 500);
 
 particlesJS(
   "particles-js", {
