@@ -1,7 +1,3 @@
-window.setInterval(function(){
-  fillOptions();
-}, 1000);
-
 particlesJS(
   "particles-js", {
   "particles": {
@@ -66,7 +62,7 @@ function fillOptions() {
   }
 
   if (pittsClevWinner == "6. Brown diarrhea" && buffColtWinner !== "7. Crappy Colts") {
-    document.getElementById("div").options[1].text = pittsClevWinner;
+    document.getElementById("div").options[1].text = "6. Brown diarrhea";
     document.getElementById("div2").options[1].text = baltTenWinner;
   }
 
