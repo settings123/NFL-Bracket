@@ -32,6 +32,8 @@
   </head>
   <body onload="fillOptions()"> 
 
+    <form action="mailto:someone@example.com" method="post" enctype="text/plain">
+
     <header class="hero">
       <div class="hero-wrap">
         <p class="intro" id="intro">Putty Kings Presents</p>
@@ -127,9 +129,10 @@
                   <option></option>
                 </select>
                
-                <input type="text" style="margin: 10px;" placeholder="Your name here" required></input>
+                <input type="text" id="username" style="margin: 10px;" placeholder="Your name here" required></input>
             </ul>
-            <button>Submit</button>
+          </form>
+            <button onclick="grabValues()">Submit</button>
           </div>
         </div>
 
