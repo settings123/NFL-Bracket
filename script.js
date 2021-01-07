@@ -1,6 +1,6 @@
 window.setInterval(function(){
   fillOptions();
-}, 500);
+}, 1000);
 
 particlesJS(
   "particles-js", {
@@ -153,11 +153,11 @@ function grabValues() {
   //Username
   var username = document.getElementById("username").value
 
-  alert(`
+var picks = (`
   Name = ${username}
 
   -------------First Round----------------
-  
+
   Pittsburgh vs Cleveland = ${pittsClevWinner}
   Batltimore vs. Tennesee = ${baltTenWinner}
   Buffalo vs. Indy = ${buffColtWinner}
@@ -182,4 +182,13 @@ function grabValues() {
   -------------Superbowl Winner----------------
   Superbowl Winner = ${final}
 `);
+
+//send email
+  var link = "mailto:me@example.com"
+           + "?cc=myCCaddress@example.com"
+           + "&subject=" + encodeURIComponent("NFL Bracket Challenge")
+           + "&body=" + encodeURIComponent(picks)
+  ;
+  
+  window.location.href = link;
 }
