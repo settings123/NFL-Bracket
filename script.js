@@ -1,4 +1,4 @@
-window.setInterval(function(){
+window.setInterval(function () {
   fillOptions();
 }, 1000);
 
@@ -93,11 +93,11 @@ function fillOptions() {
     document.getElementById("div02").options[0].text = "2. New Orgy Taints";
   }
 
-  if (seaLosWinner !== "6. Lost Angel Rammed in the butt" && nOChiWinner !==  "7. She Cock Go Barebacks") {
+  if (seaLosWinner !== "6. Lost Angel Rammed in the butt" && nOChiWinner !== "7. She Cock Go Barebacks") {
     document.getElementById("div01").options[1].text = tampaWashWinner;
   }
 
-  if (seaLosWinner == "6. Lost Angels Ram dudes" && nOChiWinner !==  "7. She Cock Go Barebacks") {
+  if (seaLosWinner == "6. Lost Angels Ram dudes" && nOChiWinner !== "7. She Cock Go Barebacks") {
     document.getElementById("div01").options[1].text = "6. Lost Angels Ram dudes";
     document.getElementById("div02").options[1].text = tampaWashWinner;
   }
@@ -106,7 +106,7 @@ function fillOptions() {
     document.getElementById("div02").options[1].text = "3. She-attle See Cocks";
   }
 
-  if (seaLosWinner !== "3. She-attle See Cocks" && nOChiWinner ==  "7. She Cock Go Barebacks") {
+  if (seaLosWinner !== "3. She-attle See Cocks" && nOChiWinner == "7. She Cock Go Barebacks") {
     document.getElementById("div02").options[1].text = "6. Lost Angels Ram dudes";
   }
 
@@ -120,11 +120,11 @@ function fillOptions() {
   document.getElementById("conf2").options[0].text = div1WinnerEast;
   document.getElementById("conf2").options[1].text = div2WinnerEast;
 
-//finals
-var conf1Winner = document.getElementById("conf1").value
-var conf2Winner = document.getElementById("conf2").value
-document.getElementById("final").options[0].text = conf1Winner;
-document.getElementById("final").options[1].text = conf2Winner;
+  //finals
+  var conf1Winner = document.getElementById("conf1").value
+  var conf2Winner = document.getElementById("conf2").value
+  document.getElementById("final").options[0].text = conf1Winner;
+  document.getElementById("final").options[1].text = conf2Winner;
 }
 
 function grabValues() {
@@ -153,7 +153,8 @@ function grabValues() {
   //Username
   var username = document.getElementById("username").value
 
-var picks = (`
+
+  var picks = (`
   Name = ${username}
 
   -------------First Round----------------
@@ -183,12 +184,12 @@ var picks = (`
   Superbowl Winner = ${final}
 `);
 
-//send email
+  //send email
   var link = "mailto:me@example.com"
-           + "?cc=myCCaddress@example.com"
-           + "&subject=" + encodeURIComponent("NFL Bracket Challenge")
-           + "&body=" + encodeURIComponent(picks)
-  ;
-  
+    + "?cc=myCCaddress@example.com"
+    + "&subject=" + encodeURIComponent(username + "'s picks | NFL Bracket Challenge")
+    + "&body=" + encodeURIComponent(picks)
+    ;
+
   window.location.href = link;
 }
