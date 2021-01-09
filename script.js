@@ -185,7 +185,7 @@ function grabValues() {
 `);
 
   //send email
-  var link = "mailto:katmarino39@gmail.com"
+  var link = "mailto:"
     + "&subject=" + encodeURIComponent(username + "'s picks | NFL Bracket Challenge")
     + "&body=" + encodeURIComponent(picks)
     ;
