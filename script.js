@@ -52,29 +52,29 @@ function fillOptions() {
   var pittsClevWinner = document.getElementById("pittsClev").value
   var buffColtWinner = document.getElementById("buffCrap").value
 
-  if (buffColtWinner == "7. Crappy Colts") {
+  if (buffColtWinner == "7. Colts") {
     document.getElementById("div").options[1].text = buffColtWinner;
     document.getElementById("div2").options[0].text = baltTenWinner;
   }
 
-  if (buffColtWinner == "2. Buffalo poop") {
-    document.getElementById("div2").options[0].text = "2. Buffalo poop";
+  if (buffColtWinner == "2. Bills") {
+    document.getElementById("div2").options[0].text = "2. Bills";
   }
 
-  if (pittsClevWinner !== "6. Brown diarrhea" && buffColtWinner !== "7. Crappy Colts") {
+  if (pittsClevWinner !== "6. Brown diarrhea" && buffColtWinner !== "7. Colts") {
     document.getElementById("div").options[1].text = baltTenWinner;
   }
 
-  if (pittsClevWinner == "6. Brown diarrhea" && buffColtWinner !== "7. Crappy Colts") {
-    document.getElementById("div").options[1].text = "6. Brown diarrhea";
+  if (pittsClevWinner == "6. Browns" && buffColtWinner !== "7. Colts") {
+    document.getElementById("div").options[1].text = "6. Browns";
     document.getElementById("div2").options[1].text = baltTenWinner;
   }
 
-  if (pittsClevWinner == "3. Shitsburgh Steamers") {
-    document.getElementById("div2").options[1].text = "3. Shitsburgh Steamers";
+  if (pittsClevWinner == "3. Steelers") {
+    document.getElementById("div2").options[1].text = "3. Steelers";
   }
 
-  if (pittsClevWinner !== "3. Shitsburgh Steamers" && buffColtWinner == "7. Crappy Colts") {
+  if (pittsClevWinner !== "3. Steelers" && buffColtWinner == "7. Colts") {
     document.getElementById("div2").options[1].text = "6. Brown diarrhea";
   }
 
@@ -84,30 +84,30 @@ function fillOptions() {
   var seaLosWinner = document.getElementById("seaLos").value
   var nOChiWinner = document.getElementById("nOChi").value
 
-  if (nOChiWinner == "7. She Cock Go Barebacks") {
+  if (nOChiWinner == "7. Bears") {
     document.getElementById("div01").options[1].text = nOChiWinner;
     document.getElementById("div02").options[0].text = tampaWashWinner;
   }
 
-  if (nOChiWinner == "2. New Orgy Taints") {
-    document.getElementById("div02").options[0].text = "2. New Orgy Taints";
+  if (nOChiWinner == "2. Saints") {
+    document.getElementById("div02").options[0].text = "2. Saints";
   }
 
-  if (seaLosWinner !== "6. Lost Angel Rammed in the butt" && nOChiWinner !== "7. She Cock Go Barebacks") {
+  if (seaLosWinner !== "6. Rams" && nOChiWinner !== "7. Bears") {
     document.getElementById("div01").options[1].text = tampaWashWinner;
   }
 
-  if (seaLosWinner == "6. Lost Angels Ram dudes" && nOChiWinner !== "7. She Cock Go Barebacks") {
-    document.getElementById("div01").options[1].text = "6. Lost Angels Ram dudes";
+  if (seaLosWinner == "6. Rams" && nOChiWinner !== "7. Bears") {
+    document.getElementById("div01").options[1].text = "6. Rams";
     document.getElementById("div02").options[1].text = tampaWashWinner;
   }
 
-  if (seaLosWinner == "3. She-attle See Cocks") {
-    document.getElementById("div02").options[1].text = "3. She-attle See Cocks";
+  if (seaLosWinner == "3. Seahawks") {
+    document.getElementById("div02").options[1].text = "3. Seahawks";
   }
 
-  if (seaLosWinner !== "3. She-attle See Cocks" && nOChiWinner == "7. She Cock Go Barebacks") {
-    document.getElementById("div02").options[1].text = "6. Lost Angels Ram dudes";
+  if (seaLosWinner !== "3. Seahawks" && nOChiWinner == "7. Bears") {
+    document.getElementById("div02").options[1].text = "6. Rams";
   }
 
   // Conf games
